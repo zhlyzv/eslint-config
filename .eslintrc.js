@@ -66,14 +66,6 @@ module.exports = {
             'error',
             'except-parens'
         ],
-        'no-restricted-syntax': [
-            'warn',
-            [
-                'ForInStatement',
-                'LabeledStatement',
-                'WithStatement'
-            ]
-        ],
         'import/prefer-default-export': 'off',
         'import': 'off',
         'func-names': 'off',
