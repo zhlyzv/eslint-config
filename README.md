@@ -17,30 +17,26 @@ Global installation is useful so linting can happen on smaller JS projects as we
 1. Run `npx install-peerdeps -D eslint-config-zhlyzv` to install dependencies
 2. Create an `.eslintrc.js` file in the root of the project directory
 3. Add the following to use the config from my package:
-   ```js
+   ```json
    {
-       'extends': [
-           'zhlyzv'
-       ]
+     "extends": ["zhlyzv"]
    }
    ```
 
 ## Global install
 
 1. Run `npx install-peerdeps -g eslint-config-zhlyzv` to install dependencies
-2. Create a global `.eslintrc.js` file
+2. Create a global `.eslintrc` file
 
    This should be located in:
 
-   - `~/.eslintrc.js` for Linux/Mac
-   - `%userprofile%\.eslintrc.js` for Windows
+   - `~/.eslintrc` for Linux/Mac
+   - `%userprofile%\.eslintrc` for Windows
 
 3. Add the following to use the config from my package:
-   ```js
+   ```json
    {
-       'extends': [
-           'zhlyzv'
-       ]
+     "extends": ["zhlyzv"]
    }
    ```
 
