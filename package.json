@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zhlyzv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My personal eslint + prettier config used for React and Node projects.",
   "main": "index.js",
   "scripts": {
