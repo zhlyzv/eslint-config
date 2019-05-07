@@ -28,6 +28,7 @@ module.exports = {
     },
 
     rules: {
+        'indent': ['error', 4],
         'arrow-parens': 'off',
         'arrow-body-style': [
             'warn',
@@ -110,10 +111,12 @@ module.exports = {
         'prettier/prettier': [
             'error',
             {
-                trailingComma: 'es5',
-                singleQuote: true,
-                printWidth: 100,
-                //jsxSingleQuote: true
+                'trailingComma': 'es5',
+                'tabWidth': 4,
+                'semi': true,
+                'singleQuote': true,
+                'printWidth': 100,
+                'jsxSingleQuote': true
             }
         ]
     }
