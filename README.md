@@ -6,13 +6,11 @@
 * Lints and Fixes React
 * Fixes code formatting issues with Prettier
 
-___
 ## Installation
 This config can be used both globally and locally per project.
 
 Global installation is useful so linting can happen on smaller JS projects as well.
 
-___
 ## Local install
 
 1. Run `npx install-peerdeps --dev @zhlyzv/eslint-config` to install dependencies
@@ -26,7 +24,6 @@ ___
     }
     ```
 
-___
 ## Global install
 1. Run `npx install-peerdeps --dev @zhlyzv/eslint-config` to install dependencies
 2. Create a global `.eslintrc.js` file
@@ -44,7 +41,6 @@ ___
     }
     ```
 
-___
 ## VS Code setup
 
 Do this after completing the above setup.

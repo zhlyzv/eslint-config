@@ -16,6 +16,7 @@
   ],
   "author": "Alexander Zhelyazov <git@zhlyzv.xyz>",
   "license": "MIT",
+  "repository": "https://github.com/zhlyzv/eslint-config.git",
   "peerDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
