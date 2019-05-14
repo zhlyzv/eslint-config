@@ -15,7 +15,7 @@ Global installation is useful so linting can happen on smaller JS projects as we
 ## Local install
 
 1. Run `npx install-peerdeps --dev eslint-config-zhlyzv` to install dependencies
-2. Create an `.eslintrc.js` file in the root of the project directory
+2. Create an `.eslintrc` file in the root of the project directory
 3. Add the following:
    ```json
    {
