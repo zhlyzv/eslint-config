@@ -16,7 +16,7 @@ Global installation is useful so linting can happen on smaller JS projects as we
 
 1. Run `npx install-peerdeps -D eslint-config-zhlyzv` to install dependencies
 2. Create an `.eslintrc.js` file in the root of the project directory
-3. Add the following to use the config from my package:
+3. Add the following:
    ```json
    {
      "extends": ["zhlyzv"]
@@ -33,7 +33,7 @@ Global installation is useful so linting can happen on smaller JS projects as we
    - `~/.eslintrc` for Linux/Mac
    - `%userprofile%\.eslintrc` for Windows
 
-3. Add the following to use the config from my package:
+3. Add the following:
    ```json
    {
      "extends": ["zhlyzv"]
