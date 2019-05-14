@@ -28,7 +28,6 @@ module.exports = {
     },
 
     rules: {
-        'indent': ['error', 4],
         'arrow-parens': 'off',
         'arrow-body-style': [
             'warn',
@@ -98,7 +97,7 @@ module.exports = {
             }
         ],
         'react/require-default-props': 'off',
-        'react/jsx-filename-extension': [1,
+        'react/jsx-filename-extension': ['error',
             {
                 extensions: ['.js', '.jsx']
             }],
@@ -112,11 +111,8 @@ module.exports = {
             'error',
             {
                 'trailingComma': 'es5',
-                'tabWidth': 4,
-                'semi': true,
                 'singleQuote': true,
-                'printWidth': 100,
-                'jsxSingleQuote': true
+                'printWidth': 80,
             }
         ]
     }
