@@ -1,73 +1,60 @@
 module.exports = {
-    extends: [
-        'airbnb',
-        'prettier',
-        'prettier/react'
-    ],
+    extends: ['airbnb', 'prettier'],
 
-    plugins: [
-        'html',
-        'prettier',
-        'react-hooks'
-    ],
+    plugins: ['html', 'prettier', 'react-hooks'],
 
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
 
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 12,
+        requireConfigFile: false,
         ecmaFeatures: {
             impliedStrict: true,
-            classes: true
-        }
+            classes: true,
+        },
     },
 
     env: {
         browser: true,
         node: true,
-        jest: true
+        jest: true,
     },
 
     rules: {
         'arrow-parens': 'off',
-        'arrow-body-style': [
-            'warn',
-            'as-needed'
-        ],
-        'quotes': [
+        'arrow-body-style': ['warn', 'as-needed'],
+        quotes: [
             'warn',
             'single',
             {
-                'avoidEscape': true,
-                'allowTemplateLiterals': true
-            }
+                avoidEscape: true,
+                allowTemplateLiterals: true,
+            },
         ],
         'prefer-const': [
             'error',
             {
-                'destructuring': 'all',
-            }
+                destructuring: 'all',
+            },
         ],
         'no-unused-expressions': [
             'warn',
             {
-                'allowTaggedTemplates': true
-            }
+                allowTaggedTemplates: true,
+            },
         ],
         'no-param-reassign': [
             'warn',
             {
-                'props': false
-            }
+                props: false,
+            },
         ],
         'no-console': 'off',
         'no-debugger': 'off',
         'no-await-in-loop': 0,
-        'no-return-assign': [
-            'error',
-            'except-parens'
-        ],
+        'no-return-assign': ['error', 'except-parens'],
         'import/prefer-default-export': 'off',
-        'import': 'off',
+        import: 'off',
         'func-names': 'off',
         'space-before-function-paren': 'off',
         'comma-dangle': 'off',
@@ -85,35 +72,29 @@ module.exports = {
         'no-shadow': [
             'warn',
             {
-                'hoist': 'all',
-                'allow': [
-                    'resolve',
-                    'reject',
-                    'done',
-                    'next',
-                    'err',
-                    'error'
-                ]
-            }
+                hoist: 'all',
+                allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
+            },
         ],
         'react/require-default-props': 'off',
-        'react/jsx-filename-extension': ['error',
+        'react/jsx-filename-extension': [
+            'error',
             {
-                extensions: ['.js', '.jsx']
-            }],
-        'jsx-a11y/href-no-hash': 'off',
-        'jsx-a11y/anchor-is-valid': [
-            'warn', { aspects: ['invalidHref'] }
+                extensions: ['.js', '.jsx', 'tsx'],
+            },
         ],
+        'jsx-a11y/href-no-hash': 'off',
+        'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         'prettier/prettier': [
             'error',
             {
-                'trailingComma': 'es5',
-                'singleQuote': true,
-                'printWidth': 80,
-            }
-        ]
-    }
-}
+                trailingComma: 'es5',
+                singleQuote: true,
+                printWidth: 120,
+                tabWidth: 4,
+            },
+        ],
+    },
+};
